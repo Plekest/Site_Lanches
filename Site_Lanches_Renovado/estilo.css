@@ -1,0 +1,357 @@
+body {
+    background-color: #000000;
+    font-family: Candara, Helvetica, sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+#header {
+    background-color: #e68933;
+    position: relative;
+    bottom: 20px;
+}
+
+#logo {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    animation: pulse 2s infinite;
+}
+
+#logoImg {
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+#tituloLogo {
+    float: left;
+    color: #ffffff;
+    line-height: 100px;
+    margin: 0;
+    font-size: 50px;
+}
+
+#menu {
+    width: 100%;
+}
+
+.listaMenu {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    list-style: none;
+}
+
+.listaMenu li a {
+    border: none;
+    color: #fff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.listaMenu li a:link,
+.listaMenu li a:visited {
+    color: white;
+}
+
+.listaMenu li:nth-last-child(-n+4) a:hover {
+    background-color: white;
+    color: #ce731e;
+}
+
+#content {
+    margin-bottom: 25px;
+    width: 700px;
+    background-color: white;
+    position: relative;
+    left: 50%;
+    margin-left: -350px;
+    border: 5px solid #ce731e;
+}
+
+#promotionBanner {
+    height: 300px;
+    background-image: url('images/promocao.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#promocaoH1 {
+    color: white;
+    font-size: 64px;
+    margin: 0;
+    margin-left: 20px;
+    position: absolute;
+    text-shadow: 2px 2px 4px #ce731e;
+}
+
+#promocaoValor {
+    color: white;
+    font-size: 48px;
+    margin: 0;
+    position: relative;
+    text-shadow: 2px 2px 4px #ce731e;
+    left: 180px;
+    top: 130px;
+    width: 500px;
+    text-align: right;
+}
+
+#tituloConteudo {
+    color: #ce731e;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#areaProdutos table {
+    border-spacing: 25px;
+    border-collapse: separate;
+    text-align: center;
+}
+
+#areaProdutos td {
+    width: 250px;
+    color: #ce731e;
+    font-size: 20px;
+}
+
+#areaProdutos td img {
+    width: 150px;
+    height: 150px;
+    margin-top: 5px;
+    border-radius: 50%;
+    border: 2px solid #ce731e;
+}
+
+.tituloProduto {
+    font-weight: bold;
+    margin: 0;
+}
+
+.precoProduto {
+    margin: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 50%;
+    padding: 3px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.button {
+    display: inline-block;
+    padding: .75rem 1.25rem;
+    border-radius: 10rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: .15rem;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    background-color: #c78950;
+    border: solid 2px ;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+.button:hover {
+    background-color: #ce731e;
+    color: #fff;
+    border: solid 2px ;
+}
+
+/* optional reset for presentation */
+* {
+    font-family: Arial;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+}
+
+#entrega {
+    position: fixed;
+    bottom: 110px;
+    right: 10px;
+    height: 190px;
+    width: 300px;
+}
+
+#tel {
+    position: absolute;
+    left: 120px;
+
+    width: 100%;
+    background-color: #ce731e;
+    color: white;
+    margin-top: 13px;
+    padding: 10px;
+    padding-bottom: 0;
+    border-radius: 15px;
+}
+
+#tel a {
+    color: white;
+    text-decoration: none;
+}
+
+#sobreNos {
+    margin-bottom: 25px;
+    width: 700px;
+    background-color: white;
+    position: relative;
+    left: 50%;
+    margin-left: -350px;
+    border: 5px solid #ce731e;
+    text-align: left;
+    font-size: 20px;
+    text-align: center;
+}
+
+#sobreNos p {
+    margin: 10px;
+}
+
+#sobreNos img {
+    width: 90%;
+}
+
+#contato {
+    margin-bottom: 25px;
+    width: 700px;
+    background-color: white;
+    position: relative;
+    left: 50%;
+    margin-left: -350px;
+    border: 5px solid #ce731e;
+    text-align: left;
+    font-size: 20px;
+    text-align: center;
+}
+
+#contato a {
+    text-decoration: none;
+    color:#c5650b;
+}
+
+#areaProdutos h3,p,h2,h1{
+    color: #c5650b;
+}
+
+.googleMaps img{
+    width: 90%;
+    border: 3px solid #c5650b;
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+}
+
+.rodape {
+    background-color: #797979;
+}
+
+.rodape p{
+    margin: 0;
+    color: white;
+}
+
+.lista-horizontal-rodape{
+    list-style-type: none; /* Remove os marcadores padrão */
+    padding: 0; /* Remove o preenchimento padrão da lista */
+    display: flex; /* Define a lista como um flex container */
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.lista-horizontal-rodape li{
+    margin-right: 20px;
+}
+
+.lista-horizontal-rodape a{
+    text-decoration: none;
+    color: white;
+}
+
+.pagamentos {
+    width: 10px;
+    margin: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 50%;
+    padding: 3px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilos para os produtos */
+.produto {
+    border: 1px solid #c5650b;;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    width: 200px; /* Largura dos produtos */
+    display: inline-block;
+}
+
+/* Estilos para a tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Estilos para as células da tabela */
+td {
+    padding: 10px;
+    vertical-align: top;
+}
+
