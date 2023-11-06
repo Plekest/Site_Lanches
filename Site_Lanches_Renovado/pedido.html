@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Supreme's Burguer</title>
+    <link href="estilo.css" type="text/css" rel="stylesheet">
+    <link href="./images/logo.png" rel="shortcut icon">
+    <style>
+        h2,
+        h3 {
+            color: #ce731e;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div id="menu">
+            <ul class="listaMenu">
+                <li>
+                    <div id="logo"><a href="./index.html">
+                            <img id="logoImg" src="images/hamburguer.png">
+                            <h1 id="tituloLogo">Supreme's Burguer</h1>
+                    </div></a>
+                </li>
+                <li><a href="./sobreNos.html">Sobre Nós</a></li>
+                <li><a id="menuAtual" href="./index.html">Lanches</a></li>
+                <li><a href="./contato.html">Contato</a></li>
+                <li><a href="./pedido.html">Solicitar Pedido</a></li>
+            </ul>
+        </div>
+    </div><br>
+
+    <div id="sobreNos">
+        <div id="promotionBanner">
+            <h1 id="promocaoH1">Promoção!</h1>
+            <h2 id="promocaoValor">2 Chicken Supreme + Batata 26,99</h1>
+        </div>
+        <h2 style="font-size: larger;">Faça Seu Pedido!</h2><br>
+        <form>
+            <label class="pedidos">Nome:</label>
+            <input type="text">
+            <label class="pedidos">Endereço:</label>
+            <input type="text">
+            <label class="pedidos">Telefone:</label>
+            <input type="text"><br>
+            <label class="pedidos">Forma de Pagamento:</label><br>
+            <input type="radio" name="pagamento" class="pagamentos">Dinheiro
+            <input type="radio" name="pagamento" class="pagamentos">Pix
+            <input type="radio" name="pagamento" class="pagamentos">Crédito
+            <input type="radio" name="pagamento" class="pagamentos">Débito<br><br>
+            <table>
+                <tr>
+                    <!-- Sanduíche 1: Salada Supreme -->
+                    <td>
+                        <div class="produto">
+                            <p class="tituloProduto">Salada Supreme</p>
+                            <p class="precoProduto">R$ 12,99</p>
+                            <label>
+                                <input type="radio" name="sanduiche" value="salada_supreme" class="pagamentos">
+                                Selecionar
+                            </label>
+                            <div class="adicionais">
+                                <p>Adicionais:</p>
+                                <label>
+                                    <input type="checkbox" name="adicional" value="queijo" class="pagamentos"> Queijo
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="adicional" value="bacon" class="pagamentos"> Bacon
+                                </label>
+                            </div>
+                        </div>
+                    </td>
+
+                    <!-- Sanduíche 2: Cheddar Supreme -->
+                    <td>
+                        <div class="produto">
+                            <p class="tituloProduto">Cheddar Supreme</p>
+                            <p class="precoProduto">R$ 18,99</p>
+                            <label>
+                                <input type="radio" name="sanduiche" value="cheddar_supreme" class="pagamentos">
+                                Selecionar
+                            </label>
+                            <div class="adicionais">
+                                <p>Adicionais:</p>
+                                <label>
+                                    <input type="checkbox" name="adicional" value="cebola_frita" class="pagamentos">
+                                    Cebola Frita
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="adicional" value="molho_barbecue" class="pagamentos">
+                                    Molho Barbecue
+                                </label>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <!-- Sanduíche 3: Royal Supreme -->
+                    <td>
+                        <div class="produto">
+                            <p class="tituloProduto">Royal Supreme</p>
+                            <p class="precoProduto">R$ 22,99</p>
+                            <label>
+                                <input type="radio" name="sanduiche" value="royal_supreme" class="pagamentos">
+                                Selecionar
+                            </label>
+                            <div class="adicionais">
+                                <p>Adicionais:</p>
+                                <label>
+                                    <input type="checkbox" name="adicional" value="ovo" class="pagamentos"> Ovo
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="adicional" value="alface" class "pagamentos"> Alface
+                                </label>
+                            </div>
+                        </div>
+                    </td>
+
+                    <!-- Sanduíche 4: Tower Supreme -->
+                    <td>
+                        <div class="produto">
+                            <p class="tituloProduto">Tower Supreme</p>
+                            <p class="precoProduto">R$ 26,99</p>
+                            <label>
+                                <input type="radio" name="sanduiche" value="tower_supreme" class="pagamentos">
+                                Selecionar
+                            </label>
+                            <div class="adicionais">
+                                <p>Adicionais:</p>
+                                <label>
+                                    <input type="checkbox" name="adicional" value="cebola_roxa" class="pagamentos">
+                                    Cebola Roxa
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="adicional" value="molho_picante" class="pagamentos">
+                                    Molho Picante
+                                </label>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <!-- Sanduíche 5: Bata Rústica G -->
+                    <td>
+                        <div class="produto">
+                            <p class="tituloProduto">Bata Rústica G</p>
+                            <p class="precoProduto">R$ 12,00</p>
+                            <label>
+                                <input type="radio" name="sanduiche" value="bata_rustica_g" class="pagamentos">
+                                Selecionar
+                            </label>
+                            <div class="adicionais">
+                                <p>Adicionais:</p>
+                                <label>
+                                    <input type="checkbox" name="adicional" value="maionese" class="pagamentos">
+                                    Maionese
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="adicional" value="ketchup" class="pagamentos"> Ketchup
+                                </label>
+                            </div>
+                        </div>
+                    </td>
+
+                    <!-- Sanduíche 6: Chicken Supreme -->
+                    <td>
+                        <div class="produto">
+                            <p class="tituloProduto">Chicken Supreme</p>
+                            <p class="precoProduto">R$ 16,99</p>
+                            <label>
+                                <input type="radio" name="sanduiche" value="chicken_supreme" class="pagamentos">
+                                Selecionar
+                            </label>
+                            <div class="adicionais">
+                                <p>Adicionais:</p>
+                                <label>
+                                    <input type="checkbox" name="adicional" value="requeijao" class="pagamentos">
+                                    Requeijão
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="adicional" value="alho" class="pagamentos"> Alho
+                                </label>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <!-- Sanduíche 7: Milk-Shake 500ml -->
+                    <td>
+                        <div class="produto">
+                            <p class="tituloProduto">Milk-Shake 500ml</p>
+                            <p class="precoProduto">R$ 15,99</p>
+                            <label>
+                                <input type="radio" name="sanduiche" value="milkshake_500ml" class="pagamentos">
+                                Selecionar
+                            </label>
+                            <div class "adicionais">
+                                <p>Adicionais:</p>
+                                <label>
+                                    <input type="checkbox" name="adicional" value="chocolate" class="pagamentos">
+                                    Chocolate
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="adicional" value="morango" class="pagamentos"> Morango
+                                </label>
+                            </div>
+                        </div>
+                    </td>
+
+                    <!-- Sanduíche 8: Refri 265ml -->
+                    <td>
+                        <div class="produto">
+                            <p class="tituloProduto">Refri 265ml</p>
+                            <p class="precoProduto">R$ 6,59</p>
+                            <label>
+                                <input type="radio" name="sanduiche" value="refri_265ml" class="pagamentos"> Selecionar
+                            </label>
+                            <div class="adicionais">
+                                <p>Adicionais:</p>
+                                <label>
+                                    <input type="checkbox" name="adicional" value="coca_cola" class="pagamentos">
+                                    Coca-Cola
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="adicional" value="guarana" class="pagamentos"> Guaraná
+                                </label>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <!-- Sanduíche 9: Suco 500 ml -->
+                    <td>
+                        <div class="produto">
+                            <p class="tituloProduto">Suco 500 ml</p>
+                            <p class="precoProduto">R$ 7,99</p>
+                            <label>
+                                <input type="radio" name="sanduiche" value="suco_500ml" class="pagamentos"> Selecionar
+                            </label>
+                            <div class="adicionais">
+                                <p>Adicionais:</p>
+                                <label>
+                                    <input type="checkbox" name="adicional" value="laranja" class="pagamentos"> Laranja
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="adicional" value="uva" class="pagamentos"> Uva
+                                </label>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table><br>
+
+            <div class="container">
+                <button type="submit" id="botaoEntrega" class="button">Pedir</button>
+            </div><br>
+        </form>
+    </div>
+
+    <footer>
+        <div class="rodape">
+            <ul class="lista-horizontal-rodape">
+                <li>
+                    <div><a href="./index.html">
+                            <img id="logoImg" src="images/hamburguer.png">
+                    </div></a>
+                </li>
+                <li>
+                    <p>&copy; 2023 Supreme's Burguer - Todos os direitos reservados</p>
+                </li>
+                <li><a href="./politicaPriv.html">Política de Privacidade</a></li>
+                <li><a href="./termos.html">Termos de Uso</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
